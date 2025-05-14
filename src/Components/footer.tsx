@@ -1,8 +1,7 @@
 import Link from "next/link";
-import { FaWhatsapp }  from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
 import RedesSociales from "./RedesSociales";
-
 
 const data = {
   message: ' "Contáctanos y hagamos de tu evento un éxito "',
@@ -29,16 +28,25 @@ const Footer: React.FC = () => {
           <div className="flex flex-wrap gap-0">
             <div className="flex-1">
               {data.link.slice(0, 3).map((link, index) => (
-                <li key={index} className="pb-3">
-                  <Link href={link.href}>{link.text}</Link>
+                <li key={index} className="pb-3 group relative">
+                  <Link href={link.href} className="inline-block">
+                    <span className="text-lg text-white hover:text-[#FFF] transition-colors duration-300 relative">
+                      {link.text}
+                      <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#FFF] transition-all duration-500 group-hover:w-full"></span>
+                    </span>
+                  </Link>
                 </li>
               ))}
             </div>
-
             <div className="flex-1">
               {data.link.slice(3).map((link, index) => (
-                <li key={index} className="pb-3">
-                  <Link href={link.href}>{link.text}</Link>
+                <li key={index} className="pb-3 group relative">
+                  <Link href={link.href} className="inline-block">
+                    <span className="text-lg text-white hover:text-[#fff] transition-colors duration-300 relative">
+                      {link.text}
+                      <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#fff] transition-all duration-500 group-hover:w-full origin-left"></span>
+                    </span>
+                  </Link>
                 </li>
               ))}
             </div>
@@ -48,18 +56,18 @@ const Footer: React.FC = () => {
           <div className="font-semibold pb-3 font-serif text-2xl">
             Siguenos{" "}
           </div>{" "}
-          <RedesSociales/>
+          <RedesSociales />
         </div>
         <div className="flex-1">
           <div className="font-semibold pb-3 font-serif text-2xl">
             Contacto{" "}
           </div>
           <div className="pb-2 flex gap-2">
-            <FaWhatsapp/>
+            <FaWhatsapp />
             {data.celular}
           </div>
           <div className="pt-1 flex gap-2">
-            <MdOutlineMail/>
+            <MdOutlineMail />
             {data.correo}
           </div>
         </div>

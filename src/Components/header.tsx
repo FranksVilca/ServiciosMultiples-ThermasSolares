@@ -13,7 +13,7 @@ const Seccion = {
 
 const Header: React.FC = () => {
   return (
-    <div>
+    <div className="sticky">
       <div className="w-full flex flex-wrap bg-[#21640f]">
         <div className="w-full md:w-1/2 p-4 pl-28">
           <Image

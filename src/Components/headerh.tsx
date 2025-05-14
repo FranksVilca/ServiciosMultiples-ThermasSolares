@@ -9,7 +9,7 @@ const Headerh: React.FC = () => {
   return (
     <div>
       <div className="w-full flex flex-wrap bg-[#fff] py-4">
-        <div className="w-full md:w-1/2 p-4 pl-28">
+        <div className="w-full md:w-1/2 pl-28">
           <span className="text-[#868686] text-xl">{Data.correo} | {Data.direccion}</span>
         </div>
         <div className="md:w-1/2 flex justify-center">
