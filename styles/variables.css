@@ -1,0 +1,10 @@
+:root {
+  --color-bg: #ff0000;
+  --color-text: #1a1a1a;
+  --color-main-component: #1a1a1a;
+}
+
+.dark {
+  --color-bg: #1a1a1a;
+  --color-text: #f0f0f0;
+}

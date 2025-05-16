@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@import './variables.css';
+@import './utilities.css';
 
 :root {
   --background: #ffffff;
@@ -130,3 +132,5 @@ body {
   background: #ff0000;
   color: #fff;
 }
+
+

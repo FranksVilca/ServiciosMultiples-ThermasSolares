@@ -1,0 +1,9 @@
+@layer utilities {
+  .bg-theme {
+    background-color: var(--color-bg);
+  }
+
+  .text-theme {
+    color: var(--color-text);
+  }
+}
