@@ -3,6 +3,10 @@
     background-color: var(--color-bg);
   }
 
+  .bg-main {
+    background-color: var(--color-main-component);
+  }
+  
   .bg-second {
     background-color: var(--color-second-component);
   }
@@ -11,11 +15,11 @@
     background-color: var(--color-third-component);
   }
 
-  .bg-theme {
-    background-color: var(--color-bg);
-  }
-
   .text-theme {
     color: var(--color-text);
+  }
+
+  .text-second {
+    color: var(--color-text-second);
   }
 }
