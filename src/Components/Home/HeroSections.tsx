@@ -19,7 +19,7 @@ const HeroSections: React.FC = () => {
           <div></div>
         </div>
         <div className="flex-1">
-          <div className="bg-theme w-full">asd</div>
+          <div className="bg-second w-full">asd</div>
           <div className="bg-[#939393] w-full">asd</div>
         </div>
         <div className="flex-1 justify-items-center">

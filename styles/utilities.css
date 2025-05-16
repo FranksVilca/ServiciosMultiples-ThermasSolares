@@ -3,6 +3,18 @@
     background-color: var(--color-bg);
   }
 
+  .bg-second {
+    background-color: var(--color-second-component);
+  }
+
+  .bg-third {
+    background-color: var(--color-third-component);
+  }
+
+  .bg-theme {
+    background-color: var(--color-bg);
+  }
+
   .text-theme {
     color: var(--color-text);
   }
