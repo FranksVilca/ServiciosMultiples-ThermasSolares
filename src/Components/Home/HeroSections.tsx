@@ -56,7 +56,7 @@ const HeroSections: React.FC = () => {
           {/* Fondo verde */}
           <div className="absolute right-0 h-full w-3/4 bg-gradient-to-b from-[#5cb54300] to-[#5BB543] z-0"></div>
           {/* Capa gris encima */}
-          <div className="absolute left-0 h-27/30 w-3/4 bg-gray-400 z-10 top-20"></div>
+          <div className="absolute left-0 h-35/40 w-3/4 bg-gray-400 z-10 mt-20"></div>
         </div>
         <div className="flex-1 justify-items-center pt-28">
           <button className="bg-main rounded-full w-16 h-16 flex items-center justify-center">
