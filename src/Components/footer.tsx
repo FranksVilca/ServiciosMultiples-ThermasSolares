@@ -7,9 +7,9 @@ const data = {
   message: ' "Contáctanos y hagamos de tu evento un éxito "',
   link: [
     { href: "/about", text: "Incio" },
-    { href: "/about", text: "Nosotros" },
-    { href: "/about", text: "Servicios" },
-    { href: "/about", text: "Contacto" },
+    { href: "/sobreNosotros", text: "Nosotros" },
+    { href: "/Servicios", text: "Servicios" },
+    { href: "/Contactanos", text: "Contacto" },
     { href: "/about", text: "Blog" },
   ],
   celular: "959107196",

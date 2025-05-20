@@ -64,7 +64,7 @@ const servicePage: React.FC = () => {
               <div className="bg-[#000] text-[#5BB543] w-1/3 rounded-3xl text-center my-1 py-2 text-xl font-serif">
                 {item.title}
               </div>
-              <div className="flex justify-center my-2">{item.text.slice(0, 50)}...</div>
+              <div className="flex justify-center my-2 text-second">{item.text.slice(0, 50)}...</div>
               <div className="bg-second rounded-3xl text-center my-1 py-2 w-1/3 font-serif font-semibold mx-auto">
                 Leer Mas
               </div>

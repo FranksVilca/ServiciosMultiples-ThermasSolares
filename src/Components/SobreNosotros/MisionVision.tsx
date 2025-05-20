@@ -9,11 +9,11 @@ const MisionVision: React.FC = () => {
       <div className="flex flex-col md:flex-row my-16 gap-16 px-24">
         <div className="flex-1 bg-main rounded-3xl p-8">
           <div className="text-[#FFF94D] text-3xl font-serif flex justify-center">Mision</div>
-          <div className="pt-4 px-4 text-center">{Data.Mision}</div>
+          <div className="pt-4 px-4 text-center text-[#f1fbea]">{Data.Mision}</div>
         </div>
         <div className="flex-1 bg-main rounded-3xl p-8">
           <div className="text-[#FFF94D] text-3xl font-serif flex justify-center">Vision</div>
-          <div className="pt-4 px-4 text-center">{Data.Vision}</div>
+          <div className="pt-4 px-4 text-center text-[#f1fbea]">{Data.Vision}</div>
         </div>
       </div>
     </div>

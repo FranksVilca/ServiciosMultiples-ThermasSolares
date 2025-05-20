@@ -4,9 +4,9 @@ import Link from "next/link";
 const Seccion = {
   link: [
     { href: "/", text: "Incio" },
-    { href: "/about", text: "Nosotros" },
-    { href: "/about", text: "Servicios" },
-    { href: "/about", text: "Contacto" },
+    { href: "/sobreNosotros", text: "Nosotros" },
+    { href: "/Servicios", text: "Servicios" },
+    { href: "/Contactanos", text: "Contacto" },
     { href: "/about", text: "Blog" },
   ],
 };
@@ -14,7 +14,7 @@ const Seccion = {
 const Header: React.FC = () => {
   return (
     <div className="sticky">
-      <div className="w-full flex flex-wrap bg-[#21640f]">
+      <div className="w-full flex flex-wrap bg-[#356c1f]">
         <div className="w-full md:w-1/2 p-4 pl-28">
           <Image
             src="/logo.webp"
