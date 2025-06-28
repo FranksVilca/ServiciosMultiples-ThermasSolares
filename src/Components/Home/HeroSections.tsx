@@ -48,7 +48,7 @@ const HeroSections: React.FC = () => {
               <div className="">otros</div>
             </div>
           </div>
-          <Link href={"./"} className="text-[#B1BE04] text-xl">
+          <Link href={"./Servicios"} className="text-[#B1BE04] text-xl">
             All services ---------►
           </Link>
         </div>

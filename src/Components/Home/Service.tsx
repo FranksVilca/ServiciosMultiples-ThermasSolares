@@ -32,7 +32,7 @@ const Service: React.FC = () => {
           <div className="md:basis-3/4 text-theme text-6xl">
             Servicios Integrales de Plomeria para sus Necesidades
           </div>
-          <Link href="./" className="md:basis-1/4 text-[#B1BE04]">
+          <Link href="./Servicios" className="md:basis-1/4 text-[#B1BE04]">
             {" "}
             Todos los servicios ----►
           </Link>

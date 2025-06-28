@@ -20,7 +20,7 @@ const AboutUs: React.FC = () => {
           <div className="text-6xl text-theme pt-4">{Data.title}</div>
           <div className="text-second pt-4 w-5/6">{Data.text}</div>
           <Link
-            href={"./"}
+            href={"./sobreNosotros"}
             className="inline-block my-6 py-3 px-12 bg-[#DAE021] rounded-xl"
           >
             Leer Mas
