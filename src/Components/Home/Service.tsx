@@ -1,19 +1,23 @@
 import Link from "next/link";
 import { PiGitBranchDuotone } from "react-icons/pi";
+import Image from "next/image";
 
 const Services = {
   Service: [
     {
       title: "Mantenimiento de Termas Solares",
       text: "Nuestro servicio de limpieza de desagües implica la eliminación de bloqueos y escombros.",
+      image: "/Home/IMG_20250204_173902.webp",
     },
     {
       title: "Mantenimiento de tanques elevados",
       text: "Nuestro servicio de reparación de calentadores de agua implica el diagnóstico y solución de problemas.",
+      image: "/Home/IMG_20250706_092103.webp",
     },
     {
       title: "Instalacion de Termas Solares",
       text: "Nuestro servicio de detección y reparación de fugas implica localizar y reparar fugas en su plomería.",
+      image: "/Home/IMG_20250718_155420.webp",
     },
   ],
 };
@@ -40,11 +44,24 @@ const Service: React.FC = () => {
         <div className="mt-8 flex gap-4">
           {Services.Service.map((item, index) => (
             <div key={index} className="bg-theme rounded-2xl flex-1">
-              <div className="bg-third w-full h-70 rounded-t-2xl"></div>
+              <div className="bg-third w-full h-70 rounded-t-2xl relative">
+                <Image
+                  src={item.image}
+                  alt="Service"
+                  fill
+                  style={{ objectFit: "cover" }}
+                  priority
+                />
+              </div>
               <div className="p-8">
-                <div className="text-theme text-3xl font-bold">{item.title}</div>
+                <div className="text-theme text-3xl font-bold">
+                  {item.title}
+                </div>
                 <div className="mt-4 text-second text-xl">{item.text}</div>
-                <Link href={"./"} className="inline-block bg-second mt-8 w-full py-4 rounded-xl text-center">
+                <Link
+                  href={"./"}
+                  className="inline-block bg-second mt-8 w-full py-4 rounded-xl text-center"
+                >
                   Detalles de Servicio
                 </Link>
               </div>

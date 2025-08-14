@@ -1,5 +1,6 @@
 import { PiGitBranchDuotone } from "react-icons/pi";
 import { FiTool } from "react-icons/fi";
+import Image from "next/image";
 
 const Service = {
   service: [
@@ -26,7 +27,15 @@ const WhyChoooseUs: React.FC = () => {
   return (
     <div>
       <div className="flex flex-col md:flex-row gap-8 pr-32 pt-16 bg-theme mt-16">
-        <div className="flex-1 w-full bg-third mr-4"></div>
+        <div className="flex-1 w-full bg-third mr-4 relative">
+          <Image 
+          src="/Home/IMG_20250426_102121.webp"
+          alt="Why"
+          fill
+          style={{ objectFit: 'cover' }}
+          priority
+          />
+        </div>
         <div className="flex-1 pt-4">
           <div className="text-[#5BB543] flex gap-2"><span><PiGitBranchDuotone /></span>Porque Escogernos</div>
           <div className="text-6xl text-theme mt-6">Elijanos para obtener soluciones expertas</div>

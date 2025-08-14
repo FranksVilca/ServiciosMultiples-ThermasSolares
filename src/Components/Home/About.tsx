@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { PiGitBranchDuotone } from "react-icons/pi";
+import Image from "next/image";
 const Data = {
   title: "Experimente servicios de calidad",
   text: "Entendemos la importancia de contar con un sistema de plemeria confiable. Por eso, nos comprometemos a brindar a nuestros clientes servicios de plromeria de la mas alta calidad en lo que puedan confiar.",
@@ -26,7 +27,15 @@ const AboutUs: React.FC = () => {
             Leer Mas
           </Link>
         </div>
-        <div className="flex-1 h-86 w-full bg-third rounded-2xl"> </div>
+        <div className="flex-1 h-86 w-full bg-third rounded-2xl relative">
+          <Image
+            src="/Home/IMG_20250501_114703.webp"
+            alt="About"
+            fill
+            style={{ objectFit: "cover" }}
+            priority
+          />
+        </div>
       </div>
     </div>
   );

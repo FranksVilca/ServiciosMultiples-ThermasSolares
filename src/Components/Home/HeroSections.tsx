@@ -2,6 +2,7 @@ import { IoMdArrowDropright } from "react-icons/io";
 import { FiTool } from "react-icons/fi";
 import { FaRegArrowAltCircleRight } from "react-icons/fa";
 import Link from "next/link";
+import Image from "next/image";
 
 const Service = {
   title: "Nuestros Servicios",
@@ -56,7 +57,15 @@ const HeroSections: React.FC = () => {
           {/* Fondo verde */}
           <div className="absolute right-0 h-full w-3/4 bg-gradient-to-b from-[#5cb54300] to-[#5BB543] z-0"></div>
           {/* Capa gris encima */}
-          <div className="absolute left-0 h-35/40 w-3/4 bg-gray-400 z-10 mt-20"></div>
+          <div className="absolute left-0 h-35/40 w-3/4 bg-gray-400 z-10 mt-20">
+            <Image
+              src="/Home/IMG_20250510_091351.webp"
+              alt="Descripción"
+              layout="fill"
+              objectFit="cover"
+              priority
+            />
+          </div>
         </div>
         <div className="flex-1 justify-items-center pt-28">
           <button className="bg-main rounded-full w-16 h-16 flex items-center justify-center">
