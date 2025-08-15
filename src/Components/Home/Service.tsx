@@ -43,7 +43,7 @@ const Service: React.FC = () => {
         </div>
         <div className="sm:mt-8 sm:gap-4 grid grid-cols-1 sm:grid-cols-3">
           {Services.Service.map((item, index) => (
-            <div key={index} className="bg-theme rounded-2xl flex-1">
+            <div key={index} className="bg-theme rounded-2xl flex-1 mt-4 sm:mt-0">
               <div className="bg-third w-full h-70 rounded-t-2xl relative">
                 <Image
                   src={item.image}
