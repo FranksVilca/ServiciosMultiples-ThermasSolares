@@ -16,7 +16,7 @@ const AboutUs: React.FC = () => {
             <span>
               <PiGitBranchDuotone />
             </span>
-            About Us
+            Sobre Nosotros
           </div>
           <div className="text-6xl text-theme pt-4">{Data.title}</div>
           <div className="text-second pt-4 w-5/6">{Data.text}</div>

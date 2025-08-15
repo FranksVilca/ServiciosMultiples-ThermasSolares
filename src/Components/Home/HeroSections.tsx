@@ -7,9 +7,9 @@ import Image from "next/image";
 const Service = {
   title: "Nuestros Servicios",
   Servicios: [
-    { subtitulo: "Venta de thermas solares" },
+    { subtitulo: "Venta de Thermas Solares" },
     { subtitulo: "Manteniento de Thermas" },
-    { subtitulo: "Limpieza de pozos" },
+    { subtitulo: "Limpieza de Pozos" },
   ],
 };
 
@@ -50,7 +50,7 @@ const HeroSections: React.FC = () => {
             </div>
           </div>
           <Link href={"./Servicios"} className="text-[#B1BE04] text-xl">
-            All services ---------►
+            Todos los servicios ---------►
           </Link>
         </div>
         <div className="flex-1 relative h-160 pt-2">

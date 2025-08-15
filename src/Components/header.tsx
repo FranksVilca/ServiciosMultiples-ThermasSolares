@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Seccion = {
   link: [
-    { href: "/", text: "Incio" },
+    { href: "/", text: "Inicio" },
     { href: "/sobreNosotros", text: "Nosotros" },
     { href: "/Servicios", text: "Servicios" },
     { href: "/Contactanos", text: "Contacto" },

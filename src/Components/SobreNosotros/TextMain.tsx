@@ -8,23 +8,29 @@ const Textos = {
 const TextMain: React.FC = () => {
   return (
     <div>
-      <div className="flex flex-col md:flex-row px-4 py-8">
-        <div className="flex-1 p-4 flex flex-col justify-center items-center">
-          <div className="text-4xl text-[#73FC49] font-serif flex justify-center">
+      <div className="flex flex-col lg:flex-row px-4 sm:px-6 md:px-8 py-6 md:py-8 gap-6 md:gap-8">
+        {/* Sección de texto */}
+        <div className="flex-1 p-4 sm:p-6 flex flex-col justify-center items-center lg:items-start">
+          <div className="text-2xl sm:text-3xl md:text-4xl text-[#73FC49] font-serif text-center lg:text-left">
             {Textos.title}
           </div>
-          <div className="text-second mt-8 flex items-center justify-center px-20 text-center">
+          <div className="text-second mt-4 sm:mt-6 md:mt-8 text-center lg:text-left px-4 sm:px-8 lg:px-0 max-w-lg">
             {Textos.text}
           </div>
         </div>
-        <div className="flex-1 w-full bg-third rounded-2xl h-96 mx-20 relative">
-          <Image
-            src="/Home/IMG_20250501_114700.webp"
-            alt="Service"
-            fill
-            style={{ objectFit: "cover" }}
-            priority
-          />
+
+        {/* Sección de imagen */}
+        <div className="flex-1 w-full max-w-2xl mx-auto lg:mx-0">
+          <div className="bg-third rounded-2xl h-64 sm:h-80 md:h-96 relative overflow-hidden">
+            <Image
+              src="/Home/IMG_20250501_114700.webp"
+              alt="Service"
+              fill
+              style={{ objectFit: "cover" }}
+              priority
+              className="rounded-2xl"
+            />
+          </div>
         </div>
       </div>
     </div>
