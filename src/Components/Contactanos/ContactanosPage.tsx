@@ -53,7 +53,7 @@ const ContactanosPage: React.FC = () => {
         </div>
 
         {/* Título */}
-        <div className="text-center text-theme text-2xl sm:text-3xl md:text-4xl font-serif mt-6 md:mt-8 px-4">
+        <div className="text-center text-theme text-2xl sm:text-3xl md:text-5xl font-serif mt-6 md:mt-8 px-4">
           {Data.title}
         </div>
 
