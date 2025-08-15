@@ -4,7 +4,7 @@ import { MdOutlineMail } from "react-icons/md";
 import RedesSociales from "./RedesSociales";
 
 const data = {
-  message: ' "Contáctanos y hagamos de tu evento un éxito "',
+  message: ' "Contáctanos y hagamos de tu casa un hogar "',
   link: [
     { href: "/about", text: "Incio" },
     { href: "/sobreNosotros", text: "Nosotros" },
@@ -18,15 +18,14 @@ const data = {
 
 const Footer: React.FC = () => {
   return (
-    <div className="px-4 sm:px-6 md:px-10 py-8 md:py-10 bg-[#000] text-[#fff] w-full">
+    <div className="px-10 sm:px-6 md:px-8 py-8 md:py-10 bg-[#000] text-[#fff] w-full">
       {/* Mensaje principal */}
       <div className="text-center md:text-left md:pl-56 text-xl sm:text-2xl font-serif font-semibold mb-6 md:mb-0">
         {data.message}
       </div>
-      
+
       {/* Contenido principal */}
       <div className="md:pl-56 flex flex-col lg:flex-row gap-8 lg:gap-4 pt-5">
-        
         {/* Enlaces */}
         <div className="flex-1">
           <div className="font-semibold pb-3 font-serif text-xl sm:text-2xl text-center sm:text-left">
@@ -65,7 +64,9 @@ const Footer: React.FC = () => {
           <div className="font-semibold pb-3 font-serif text-xl sm:text-2xl text-center sm:text-left">
             Síguenos
           </div>
-          <RedesSociales />
+          <div className="flex justify-center md:justify-start">
+            <RedesSociales />
+          </div>
         </div>
 
         {/* Contacto */}
@@ -74,11 +75,11 @@ const Footer: React.FC = () => {
             Contacto
           </div>
           <div className="pb-2 flex items-center gap-2 text-sm sm:text-base">
-            <FaWhatsapp/>
+            <FaWhatsapp />
             <span className="break-all text-center">{data.celular}</span>
           </div>
           <div className="pt-1 flex items-center gap-2 text-sm sm:text-base">
-            <MdOutlineMail/>
+            <MdOutlineMail />
             <span className="break-all">{data.correo}</span>
           </div>
         </div>

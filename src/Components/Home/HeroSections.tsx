@@ -17,12 +17,12 @@ const HeroSections: React.FC = () => {
   return (
     <div>
       <div className="flex flex-col md:flex-row gap-4 md:px-32 pb-28 ">
-        <div className="flex-1 pt-20">
+        <div className="flex-1 md:pt-20">
           <div className="text-theme text-6xl text-center md:text-start">
             Su <a className="text-[#5BB543]">Amigo</a>{" "}
             <a className="text-[#F6B613]">Tecnico</a> preocupandose por usted
           </div>
-          <div className="pt-8 text-second ">
+          <div className="pt-8 text-second text-center md:text-start">
             Ofrecemos servicios de plomería confiables que cubren todas sus
             necesidades. Desde reparaciones sencillas de tuberías hasta
             instalaciones complejas.
@@ -33,7 +33,7 @@ const HeroSections: React.FC = () => {
             </div>
             {Service.title}
           </div>
-          <div className="pt-4 flex gap-4 items-center pb-8">
+          <div className="pt-4 flex gap-4 items-center pb-8 justify-center md:justify-start">
             <div className="bg-[#F0F8ED] p-4 rounded-2xl">
               {Service.Servicios.map((item, index) => (
                 <div key={index} className="p-2 flex gap-4">
