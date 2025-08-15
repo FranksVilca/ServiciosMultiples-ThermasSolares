@@ -25,7 +25,7 @@ const Services = {
 const Service: React.FC = () => {
   return (
     <div>
-      <div className="px-32 py-16">
+      <div className="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 py-8 sm:py-12 md:py-16">
         <div className="flex gap-2 text-[#5BB543]">
           <span className="text-xl">
             <PiGitBranchDuotone />
@@ -33,15 +33,15 @@ const Service: React.FC = () => {
           Nuestros Servicios
         </div>
         <div className="flex flex-col md:flex-row mt-8">
-          <div className="md:basis-3/4 text-theme text-6xl">
+          <div className="md:basis-3/4 text-theme text-6xl text-center md:text-left">
             Servicios Integrales de Plomeria para sus Necesidades
           </div>
-          <Link href="./Servicios" className="md:basis-1/4 text-[#B1BE04]">
+          <Link href="./Servicios" className="md:basis-1/4 text-[#B1BE04] pt-4">
             {" "}
             Todos los servicios ----►
           </Link>
         </div>
-        <div className="mt-8 flex gap-4">
+        <div className="sm:mt-8 sm:gap-4 grid grid-cols-1 sm:grid-cols-3">
           {Services.Service.map((item, index) => (
             <div key={index} className="bg-theme rounded-2xl flex-1">
               <div className="bg-third w-full h-70 rounded-t-2xl relative">
@@ -51,6 +51,7 @@ const Service: React.FC = () => {
                   fill
                   style={{ objectFit: "cover" }}
                   priority
+                  className="rounded-t-2xl"
                 />
               </div>
               <div className="p-8">

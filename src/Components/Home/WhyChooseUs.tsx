@@ -28,14 +28,14 @@ const WhyChoooseUs: React.FC = () => {
     <div>
       <div className="flex flex-col lg:flex-row gap-6 md:gap-8 lg:pr-24 xl:pr-32 pt-8 sm:pt-12 md:pt-16 bg-theme mt-8 sm:mt-12 md:mt-16">
         {/* Sección de imagen */}
-        <div className="flex-1 w-full bg-third mr-4 relative">
+        <div className="flex-1 w-full bg-third mr-4 relative rounded-r-2xl">
           <Image
             src="/Home/IMG_20250426_102121.webp"
             alt="Why"
             fill
             style={{ objectFit: "cover" }}
             priority
-            className="rounded-2xl"
+            className="rounded-r-2xl"
           />
         </div>
 
