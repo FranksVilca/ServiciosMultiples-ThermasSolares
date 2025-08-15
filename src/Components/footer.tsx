@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
         
         {/* Enlaces */}
         <div className="flex-1">
-          <div className="font-semibold pb-3 font-serif text-xl sm:text-2xl">
+          <div className="font-semibold pb-3 font-serif text-xl sm:text-2xl text-center sm:text-left">
             Enlaces
           </div>
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-0">
@@ -62,7 +62,7 @@ const Footer: React.FC = () => {
 
         {/* Redes Sociales */}
         <div className="flex-1">
-          <div className="font-semibold pb-3 font-serif text-xl sm:text-2xl">
+          <div className="font-semibold pb-3 font-serif text-xl sm:text-2xl text-center sm:text-left">
             Síguenos
           </div>
           <RedesSociales />
@@ -70,19 +70,18 @@ const Footer: React.FC = () => {
 
         {/* Contacto */}
         <div className="flex-1">
-          <div className="font-semibold pb-3 font-serif text-xl sm:text-2xl">
+          <div className="font-semibold pb-3 font-serif text-xl sm:text-2xl text-center sm:text-left">
             Contacto
           </div>
           <div className="pb-2 flex items-center gap-2 text-sm sm:text-base">
             <FaWhatsapp/>
-            <span className="break-all">{data.celular}</span>
+            <span className="break-all text-center">{data.celular}</span>
           </div>
           <div className="pt-1 flex items-center gap-2 text-sm sm:text-base">
             <MdOutlineMail/>
             <span className="break-all">{data.correo}</span>
           </div>
         </div>
-        
       </div>
     </div>
   );

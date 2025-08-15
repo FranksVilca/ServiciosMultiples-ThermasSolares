@@ -8,9 +8,8 @@ const Textos = {
 const TextMain: React.FC = () => {
   return (
     <div>
-      <div className="flex flex-col lg:flex-row px-4 sm:px-6 md:px-8 py-6 md:py-8 gap-6 md:gap-8">
-        {/* Sección de texto */}
-        <div className="flex-1 p-4 sm:p-6 flex flex-col justify-center items-center lg:items-start">
+      <div className="flex flex-col md:flex-row px-4 py-8">
+        <div className="flex-1 p-4 flex flex-col justify-center items-center">
           <div className="text-2xl sm:text-3xl md:text-4xl text-[#73FC49] font-serif text-center lg:text-left">
             {Textos.title}
           </div>

@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div>
       <Header />
-        <div className="text-6xl text-theme flex justify-center pt-8 font-serif">Sobre Nosotros</div>
+        <div className="text-6xl text-theme flex justify-center pt-8 font-serif text-center">Sobre Nosotros</div>
         <TextMain/>
         <MisionVision/>
       <Footer />
