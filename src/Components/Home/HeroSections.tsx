@@ -16,9 +16,9 @@ const Service = {
 const HeroSections: React.FC = () => {
   return (
     <div>
-      <div className="flex flex-col md:flex-row gap-4 px-32 pb-28">
+      <div className="flex flex-col md:flex-row gap-4 md:px-32 pb-28 ">
         <div className="flex-1 pt-20">
-          <div className="text-theme text-6xl">
+          <div className="text-theme text-6xl text-center md:text-start">
             Su <a className="text-[#5BB543]">Amigo</a>{" "}
             <a className="text-[#F6B613]">Tecnico</a> preocupandose por usted
           </div>
@@ -53,7 +53,7 @@ const HeroSections: React.FC = () => {
             Todos los servicios ---------►
           </Link>
         </div>
-        <div className="flex-1 relative h-160 pt-2">
+        <div className="flex-1 relative h-160 pt-2 hidden md:block">
           {/* Fondo verde */}
           <div className="absolute right-0 h-full w-3/4 bg-gradient-to-b from-[#5cb54300] to-[#5BB543] z-0"></div>
           {/* Capa gris encima */}
