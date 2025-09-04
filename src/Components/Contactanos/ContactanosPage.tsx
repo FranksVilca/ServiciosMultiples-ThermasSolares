@@ -136,7 +136,7 @@ const ContactanosPage: React.FC = () => {
         </div>
 
         {/* Componente de redes sociales */}
-        <div className="mx-auto w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mb-8 px-4">
+        <div className="mx-auto flex justify-center w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mb-8 px-4">
           <RedesSociales />
         </div>
       </div>
