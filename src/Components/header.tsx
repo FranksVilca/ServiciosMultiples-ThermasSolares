@@ -10,7 +10,7 @@ const Seccion = {
     { href: "/sobreNosotros", text: "Nosotros" },
     { href: "/Servicios", text: "Servicios" },
     { href: "/Contactanos", text: "Contacto" },
-    { href: "/about", text: "Blog" },
+    { href: "/Blog", text: "Blog" },
   ],
 };
 

@@ -57,7 +57,7 @@ const WhyChoooseUs: React.FC = () => {
           {/* Descripción */}
           <div className="text-second mt-4 sm:mt-6 text-sm sm:text-base lg:text-lg text-center lg:text-left max-w-2xl mx-auto lg:mx-0 leading-relaxed">
             Cuando se trata de sus necesidades de plomería, necesita un equipo
-            de confianza. En Pipowork, nos comprometemos a brindar a nuestros
+            de confianza. En Servicios Multiples, nos comprometemos a brindar a nuestros
             clientes soluciones de plomería de la más alta calidad y un servicio
             al cliente excepcional.
           </div>
