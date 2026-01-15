@@ -68,7 +68,7 @@ const Services = {
   ],
 };
 
-const servicePage: React.FC = () => {
+const ServicePage: React.FC = () => {
   const [selectedService, setSelectedService] = useState<null | typeof Services.servicios[0]>(null);
 
   return (
@@ -124,4 +124,4 @@ const servicePage: React.FC = () => {
   );
 };
 
-export default servicePage;
+export default ServicePage;
