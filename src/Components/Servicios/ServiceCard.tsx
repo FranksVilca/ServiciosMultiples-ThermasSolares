@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useCallback } from "react";
 import Image from "next/image";
 
 type Servicio = {
@@ -17,11 +17,14 @@ type Props = {
 const ServiceCard: React.FC<Props> = ({ servicio, onClose }) => {
   const modalRef = useRef<HTMLDivElement>(null);
 
-  const handleClickOutside = (e: MouseEvent) => {
-    if (modalRef.current && !modalRef.current.contains(e.target as Node)) {
-      onClose();
-    }
-  };
+  const handleClickOutside = useCallback(
+    (e: MouseEvent) => {
+      if (modalRef.current && !modalRef.current.contains(e.target as Node)) {
+        onClose();
+      }
+    },
+    [onClose] // <-- onClose va en dependencias
+  );
 
   useEffect(() => {
     document.body.style.overflow = "hidden";
@@ -31,7 +34,7 @@ const ServiceCard: React.FC<Props> = ({ servicio, onClose }) => {
       document.body.style.overflow = "auto";
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, []);
+  }, [handleClickOutside]); // <-- ahora incluimos la función memoizada
 
   return (
     <div className="fixed inset-0 z-50 bg-black/50 flex items-center justify-center py-12 px-4 sm:px-8 md:px-12">
