@@ -1,6 +1,6 @@
 import Footer from "@/Components/footer";
 import Header from "@/Components/header";
-import ServicePage from "@/Components/Servicios/servicePage";
+import ServicePage from "@/Components/Servicios/ServicePage";
 
 
 export default function Home() {
